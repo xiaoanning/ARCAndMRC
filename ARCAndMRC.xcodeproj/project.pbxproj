@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4D3516F71F57FCE4002C84CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3516F61F57FCE4002C84CA /* main.m */; };
 		4D3516FA1F57FCE4002C84CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3516F91F57FCE4002C84CA /* AppDelegate.m */; };
-		4D3516FD1F57FCE4002C84CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3516FC1F57FCE4002C84CA /* ViewController.m */; };
+		4D3516FD1F57FCE4002C84CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3516FC1F57FCE4002C84CA /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4D3517001F57FCE4002C84CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3516FE1F57FCE4002C84CA /* Main.storyboard */; };
 		4D3517021F57FCE4002C84CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3517011F57FCE4002C84CA /* Assets.xcassets */; };
 		4D3517051F57FCE4002C84CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3517031F57FCE4002C84CA /* LaunchScreen.storyboard */; };
+		4D35170F1F57FD2C002C84CA /* MRCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D35170E1F57FD2C002C84CA /* MRCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4D3517011F57FCE4002C84CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3517041F57FCE4002C84CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3517061F57FCE4002C84CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D35170D1F57FD2C002C84CA /* MRCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCModel.h; sourceTree = "<group>"; };
+		4D35170E1F57FD2C002C84CA /* MRCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4D3516F41F57FCE4002C84CA /* ARCAndMRC */ = {
 			isa = PBXGroup;
 			children = (
+				4D35170C1F57FD1D002C84CA /* Model */,
 				4D3516F81F57FCE4002C84CA /* AppDelegate.h */,
 				4D3516F91F57FCE4002C84CA /* AppDelegate.m */,
 				4D3516FB1F57FCE4002C84CA /* ViewController.h */,
@@ -77,6 +81,15 @@
 				4D3516F61F57FCE4002C84CA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D35170C1F57FD1D002C84CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D35170D1F57FD2C002C84CA /* MRCModel.h */,
+				4D35170E1F57FD2C002C84CA /* MRCModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D35170F1F57FD2C002C84CA /* MRCModel.m in Sources */,
 				4D3516FD1F57FCE4002C84CA /* ViewController.m in Sources */,
 				4D3516FA1F57FCE4002C84CA /* AppDelegate.m in Sources */,
 				4D3516F71F57FCE4002C84CA /* main.m in Sources */,
@@ -273,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ARCAndMRC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.ARCAndMRC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ARCAndMRC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.ARCAndMRC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
